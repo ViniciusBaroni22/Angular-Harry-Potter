@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-image: url("assets/imgs/castelo2.jpg");
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(250, 235, 215, 0.301);
+  width: 80%;
+  margin-top: 3rem;
+  border: 5px solid #410e1a;
+  border-radius: 2rem;
+  padding: 16px;
+  box-shadow: 1px 1px 12px 12px rgba(0, 0, 0, 0.498);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container > img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.272);
+}
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answers-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #430f1b;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+
+  width: 100%;
+  height: 3rem;
+  transition: filter 0.1s;
+}
+
+.button:not(:disabled):hover {
+  background: rgb(219, 165, 5);
+  background: linear-gradient(
+    120deg,
+    rgba(219, 165, 5, 1) 11%,
+    rgba(251, 210, 20, 1) 49%,
+    rgba(198, 144, 10, 1) 83%
+  );
+
+  filter: brightness(0.8);
+}
+
+/* Finish game */
+.final-message {
+  width: 85%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background: rgba(219, 166, 5, 0.202);
+  background: linear-gradient(
+    120deg,
+    rgb(219, 166, 5) 11%,
+    rgba(251, 210, 20, 1) 49%,
+    rgba(198, 144, 10, 1) 83%
+  );
+  font-size: 35px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* General styles */
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #049b48;
+}
+
+.incorrect {
+  background-color: #a10101;
+}
