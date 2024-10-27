@@ -132,7 +132,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual casa você gostaria de entar ?",
+    question: "Qual casa você gostaria de entrar ?",
     answers: [
       { text: "Grifinória", correct: false },
       { text: "Lufa-Lufa", correct: false },
@@ -141,7 +141,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual casa você não gostaria de entar ?",
+    question: "Qual casa você não gostaria de entrar ?",
     answers: [
       { text: "Grifinória", correct: false },
       { text: "Lufa-Lufa", correct: true },
